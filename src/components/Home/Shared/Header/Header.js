@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import logo from '../../../../images/logo.jpg';
 
 const Header = () => {
    return (
@@ -9,7 +10,7 @@ const Header = () => {
          <Navbar bg="dark" variant="dark" collapseOnSelect expand="lg">
             <Container className="item py-2">
                <Navbar.Brand href="#home">
-                  <img className="logo" src="" alt="DroneBD" />
+                  <img className="logo" src={logo} alt="DroneBD" />
                </Navbar.Brand>
                <Navbar.Toggle />
                <Navbar.Collapse className="justify-content-end">
@@ -17,7 +18,7 @@ const Header = () => {
                      Home
                   </Nav.Link>
                   <Nav.Link as={Link} to="/drones">
-                     Courses
+                     Drones
                   </Nav.Link>
                   <Nav.Link as={Link} to="/about">
                      AboutUs
